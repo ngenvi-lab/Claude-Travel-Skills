@@ -14,6 +14,12 @@ Just talk to Claude normally ("make a video from these trip photos", "turn this 
 
 ### Claude app (web, desktop, mobile)
 
+**Easiest:** paste this into a Claude chat, then upload the zips it gives you under **Customize → Skills** (+ → **Create skill** → **Upload a skill**):
+
+> Clone https://github.com/ngenvi-lab/Claude-Travel-Skills and give me an upload-ready zip for each skill.
+
+This needs Claude to be able to reach GitHub from its workspace. If it can't, do it by hand:
+
 1. Download this repo: **Code → Download ZIP**, then unzip it.
 2. Inside the `Claude Travel Skills` folder, zip **each skill folder on its own**. The zip must contain the folder itself, e.g. `travel-photo-video.zip` → `travel-photo-video/SKILL.md`. Zipping only the folder's contents won't work.
 3. In Claude, go to **Customize → Skills**, click **+** → **Create skill** → **Upload a skill**, and upload each zip.
